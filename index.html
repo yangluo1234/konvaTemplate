@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/konva@10/konva.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
     <script src="main.js" defer></script>
     <title>changeMe!!!</title>
   </head>
@@ -11,7 +13,9 @@
     <main>
       <div class="toolBar"></div>
 
-      <div class="stageContainer"></div>
+      <div class="stageContainer" id="stage-container">
+        <div id="konva-stage"></div>
+      </div>
     </main>
   </body>
 </html>
