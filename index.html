@@ -2,16 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Week 4: Drawing feature</title>
+
     <script src="https://unpkg.com/konva@10/konva.min.js"></script>
+
+    <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="reset.css" />
     <script src="main.js" defer></script>
-    <title>changeMe!!!</title>
   </head>
   <body>
     <main>
-      <div class="toolBar"></div>
+      <div class="toolBar">
+        <input
+          type="time"
+          id="time-input"
+          name="time-input"
+          min="00:00"
+          max="23:59"
+        />
+        <button id="circle-button">Draw a new Circle</button>
+        <button id="clear-button">Clear</button>
+      </div>
 
       <div class="stageContainer" id="stage-container">
         <div id="konva-stage"></div>

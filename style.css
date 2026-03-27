@@ -5,6 +5,7 @@ main {
 }
 
 .stageContainer {
-  background-color: aqua;
+  background-color: rgb(12, 2, 66);
   flex: 1;
+  cursor: crosshair;
 }
